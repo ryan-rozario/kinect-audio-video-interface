@@ -67,8 +67,8 @@ start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\scrip
 
 ## Contributors
 
-[Rhevanth M (17IT134)](https://github.com/Rhevanth)
+[Rhevanth M (17IT133)](https://github.com/Rhevanth)
 
-Pranav P
+[Pranav P (17IT229)](https://github.com/pran-p)
 
 [Ryan Rozario(17IT134)](https://github.com/ryan-rozario)
