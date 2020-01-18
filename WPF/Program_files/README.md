@@ -24,23 +24,19 @@ We used a python script to control the VLC player through the VLC web interface.
 Enable control through VLC web interface by following the instruction in the [documentation](https://wiki.videolan.org/Documentation:Modules/http_intf/#VLC_2.0.0_and_later)
 
 ### WPF Application
+Open the LightBuzz.Vituvius.Samples.WPF.sln file in Visual Studio on Windows 10. Run the project.
 
 
-Change the path to the python file depending on your path in [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
+Change the path to the python file depending on your path in GesturesPage.xaml.cs file.
 
 ```cs
 start.FileName = "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python37\\python.exe";
 ```
 
-You will have to change the password to the one you have set for your web interface. Change the follwing line in the [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
+You will have to change the password to the one you have set for your web interface. Change the follwing line in the GesturesPage.xaml.cs file.
 ```cs
-start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\script.py", tblGestures.Text,"{password}");
+start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\script.py", tblGestures.Text,"1234");
 ```
-
-
-Open the [VLC_Control.sln](WPF/Program_files/VLC_Control.sln) file in Visual Studio on Windows 10. Run the project.
-
-
 
 ### Gestures
 
@@ -56,19 +52,16 @@ To edit this repo following lines are important
 
 Runs the python script with the Gesture name as argument
 
-[GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs)
+GesturesPage.xaml.cs
 ```
 start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\script.py", tblGestures.Text,"1234");
 ```
 
-[script.py](WPF/Program_files/script.py) performs actions based on what arguments are provided. It makes GET requests to the web interface for VLC player based on the documentation.
+script.py performs actions based on what arguments are provided
 
 
 
 ## Contributors
-
-[Rhevanth M (17IT134)](https://github.com/Rhevanth)
-
+Rhevanth M (17IT134)
 Pranav P
-
-[Ryan Rozario(17IT134)](github.com/ryan-rozario)
+Ryan Rozario(17IT134)
