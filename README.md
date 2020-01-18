@@ -32,7 +32,7 @@ Change the path to the python file depending on your path in [GesturesPage.xaml.
 start.FileName = "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python37\\python.exe";
 ```
 
-You will have to change the password to the one you have set for your web interface. Change the follwing line in the [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
+You will have to change the password to the one you have set for your web interface. Change the following line in the [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
 ```cs
 start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\script.py", tblGestures.Text,"{password}");
 ```
@@ -71,4 +71,4 @@ start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\scrip
 
 Pranav P
 
-[Ryan Rozario(17IT134)](github.com/ryan-rozario)
+[Ryan Rozario(17IT134)](https://github.com/ryan-rozario)
