@@ -1,0 +1,27 @@
+﻿<Page x:Class="LightBuzz.Vituvius.Samples.WPF.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="900"
+      Title="Samples">
+
+    <Grid>
+        <Grid Margin="1,0,4,1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="25" Style="{StaticResource ButtonTileStyle}" Content="HCI Lab1" Click="Gestures_Click" />
+            <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource ButtonTileStyle}" Content="VLC Controller" Click="Gestures_Click" />
+        </Grid>
+    </Grid>
+</Page>
