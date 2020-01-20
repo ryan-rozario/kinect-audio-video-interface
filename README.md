@@ -1,6 +1,6 @@
-# Kinect VLC Interface
+# Kinect Interface for VLC and Spotify
 
-Application to pause and play a video playing on VLC through the VLC web interface using gestures on kinect for XBOX One.
+Application to pause and play a video playing on VLC through the VLC web interface or a song playing on Spotify through Spotify Web API using gestures on kinect for XBOX One.
 
 This is part of the first lab of Human Computer Interface Course.
 
@@ -12,27 +12,36 @@ We used the SwipeLeft Gesture for pause and SwipeRight Gesture for play.
 
 This WPF application then ran a python script whenever a recognized gesture was invoked
 
-We used a python script to control the VLC player through the VLC web interface. The python script sent the appropriate GET requests to the VLC web interface to generate the appropriate output.
+We used a python script to  
+* Control the VLC player through the VLC web interface. The python script sent the appropriate GET requests to the VLC web interface to generate the appropriate output.
 [VLC Web Interface Documentation](https://wiki.videolan.org/Documentation:Modules/http_intf/)
 
+* Control Spotify app through the [spotify web api](https://developer.spotify.com/documentation/web-api/)
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFNlbmRzIEdFVCBSZXF1ZXN0cyAtLT4gRFtWTEMgV2ViIEludGVyZmFjZV1cbkRbVkxDIFdlYiBJbnRlcmZhY2VdLS0-IEVbVkxDIEFwcGxpY2F0aW9uXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFNlbmRzIEdFVCBSZXF1ZXN0cyAtLT4gRFtWTEMgV2ViIEludGVyZmFjZV1cbkRbVkxDIFdlYiBJbnRlcmZhY2VdLS0-IEVbVkxDIEFwcGxpY2F0aW9uXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19)
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFZMQyBXZWIgQVBJIC0tPiBEW1ZMQyBXZWIgSW50ZXJmYWNlXVxuRFtWTEMgV2ViIEludGVyZmFjZV0tLT4gRVtWTEMgQXBwbGljYXRpb25dXG5DW1B5dGhvbiBTY3JpcHRdLS0gU3BvdGlmeSBXZWIgQVBJIC0tPiBGW1Nwb3RpZnkgQXBwXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkYXJrIn19)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFZMQyBXZWIgQVBJIC0tPiBEW1ZMQyBXZWIgSW50ZXJmYWNlXVxuRFtWTEMgV2ViIEludGVyZmFjZV0tLT4gRVtWTEMgQXBwbGljYXRpb25dXG5DW1B5dGhvbiBTY3JpcHRdLS0gU3BvdGlmeSBXZWIgQVBJIC0tPiBGW1Nwb3RpZnkgQXBwXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkYXJrIn19)
 
 ## How to Use
 
 ### VLC Web Interface
 Enable control through VLC web interface by following the instruction in the [documentation](https://wiki.videolan.org/Documentation:Modules/http_intf/#VLC_2.0.0_and_later)
 
+### Spotify Authorization
+
+Enter the required details for authorization.
+
 ### WPF Application
 
 
 Change the path to the python file depending on your path in [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
 
+
+
 ```cs
 start.FileName = "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python37\\python.exe";
 ```
 
-You will have to change the password to the one you have set for your web interface. Change the following line in the [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
+You will have to change the password to the one you have set for your VLC web interface. Change the following line in the [GesturesPage.xaml.cs file](WPF/Program_files/GesturesPage.xaml.cs).
 ```cs
 start.Arguments = string.Format("{0} {1} {2}", "C:\\Users\\admin\\Desktop\\script.py", tblGestures.Text,"{password}");
 ```
