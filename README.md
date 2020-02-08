@@ -1,4 +1,4 @@
-# Kinect Interface for VLC and Spotify
+# Kinect Interface for VLC
 
 Application to pause and play a video playing on VLC through the VLC web interface or a song playing on Spotify through Spotify Web API using gestures on kinect for XBOX One.
 
@@ -16,19 +16,19 @@ We used a python script to
 * Control the VLC player through the VLC web interface. The python script sent the appropriate GET requests to the VLC web interface to generate the appropriate output.
 [VLC Web Interface Documentation](https://wiki.videolan.org/Documentation:Modules/http_intf/)
 
-* Control Spotify app through the [spotify web api](https://developer.spotify.com/documentation/web-api/)
-
-
 [![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFZMQyBXZWIgQVBJIC0tPiBEW1ZMQyBXZWIgSW50ZXJmYWNlXVxuRFtWTEMgV2ViIEludGVyZmFjZV0tLT4gRVtWTEMgQXBwbGljYXRpb25dXG5DW1B5dGhvbiBTY3JpcHRdLS0gU3BvdGlmeSBXZWIgQVBJIC0tPiBGW1Nwb3RpZnkgQXBwXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkYXJrIn19)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkFbS2luZWN0XSAtLSBWaXRydXZpdXMgLS0-IEJbV1BGIEFwcGxpY2F0aW9uXVxuQltXUEYgQXBwbGljYXRpb25dLS0gU2VuZHMgUmVjb2duaXplZCBHZXN0dXJlcyAtLT4gQ1tQeXRob24gU2NyaXB0XVxuQ1tQeXRob24gU2NyaXB0XS0tIFZMQyBXZWIgQVBJIC0tPiBEW1ZMQyBXZWIgSW50ZXJmYWNlXVxuRFtWTEMgV2ViIEludGVyZmFjZV0tLT4gRVtWTEMgQXBwbGljYXRpb25dXG5DW1B5dGhvbiBTY3JpcHRdLS0gU3BvdGlmeSBXZWIgQVBJIC0tPiBGW1Nwb3RpZnkgQXBwXSIsIm1lcm1haWQiOnsidGhlbWUiOiJkYXJrIn19)
+
+Spotify control has not yet been added.
+
+If you want to add spotify control change the python script to:
+
+Control Spotify app through the [spotify web api](https://developer.spotify.com/documentation/web-api/)
+
 
 ## How to Use
 
 ### VLC Web Interface
 Enable control through VLC web interface by following the instruction in the [documentation](https://wiki.videolan.org/Documentation:Modules/http_intf/#VLC_2.0.0_and_later)
-
-### Spotify Authorization
-
-Enter the required details for authorization.
 
 ### WPF Application
 
